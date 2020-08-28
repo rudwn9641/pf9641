@@ -1,0 +1,22 @@
+/*    Reset CSS  */
+* {
+    margin: 0;  
+    padding: 0;
+}
+ol, ul, li {list-style: none;}
+
+a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+#wrap>div {
+    width:100%;  
+    position:relative;
+}
+
+#box1 {background:lightcyan;}
+#box2 {background:lightgreen;}
+#box3 {background:orange;}
+#box4 {background:violet;}
+
