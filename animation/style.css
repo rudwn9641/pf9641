@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-align: center;
+}
+
+.after::after {
+    display:block;
+    content:"";
+    clear:both;
+}
+
+.wrapA {
+    margin-top:300px;
+    display: inline-block;
+    animation-name: ani1;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 40s;
+    position: relative;
+    white-space: nowrap; /*한줄로 병합*/
+}
+
+strong {
+    font-size:64px;
+    margin-right:100px;
+    text-align: left;
+    
+}
+
+.wrapA:hover {
+    animation-play-state: paused;
+}
+
+@keyframes ani1 {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.wrapB {
+    margin:300px;
+
+}
+
+.wrapB>div {
+    width:600px;
+    height:600px;
+    margin:0 auto;
+    background:lightseagreen;
+    position: relative;
+    animation-name: ani2;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 20s;
+
+}
+
+.wrapB>div>.line {
+    width:50%;
+    height:50%;
+    border:2px solid #fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+@keyframes ani2 {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
